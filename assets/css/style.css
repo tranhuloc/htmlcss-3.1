@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #152427;
+    --secondary-color: #E2EDDF;
+}
+
 html,
 body {
     scroll-behavior: smooth;
@@ -18,3 +23,102 @@ body {
 header {
     font-family: 'Public Sans', sans-serif;
 }
+
+/* =============================== Common =============================== */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+    /* background-color: orange; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 173px;
+    height: 57px;
+    padding: 15px 54px;
+    border: 1.5px solid #143C3C;
+    border-radius: 40px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* =============================== Header =============================== */
+.header {
+    min-height: 100vh;
+    padding-top: 28px;
+}
+
+/* Header top */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-action {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+    margin-right: 88px;
+}
+
+.navbar__link {
+    padding: 8px 19px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: .25s;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active::before {
+    position: relative;
+    top: 37px;
+    left: 17px;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.header-dash {
+    margin-top: 13px;
+    height: 1px;
+    background: linear-gradient(90deg, #FFFFFF 0%, #DDDCDC 51.09%, rgba(213, 213, 213, 0) 99.68%);
+}
+
+
