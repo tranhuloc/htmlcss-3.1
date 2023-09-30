@@ -121,4 +121,147 @@ input, textarea, select, button {
     background: linear-gradient(90deg, #FFFFFF 0%, #DDDCDC 51.09%, rgba(213, 213, 213, 0) 99.68%);
 }
 
+/* =============================== Hero =============================== */
+.hero {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 76px;
+}
+
+.hero__content {
+    margin-top: 43px;
+    flex-shrink: 0;
+    max-width: 35%;
+}
+
+.hero__heading {
+    width: 368px;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+
+.hero__desc {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: #575D5E;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-shrink: 0;
+    margin-top: 42px;
+}
+
+.hero__header--btn {
+    padding: 15px 35px;
+}
+
+.hero__play {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    color: #152427;
+    background-color: transparent;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.hero__play:hover {
+    color: #83A17D;
+}
+
+.hero__play--border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 57px;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    rotate: -45deg;
+    transition: .25s;
+}
+
+.hero__play:hover .hero__play--border  {
+    border: 4px solid var(--primary-color);
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    rotate: 135deg;
+}
+
+.hero__play--btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    outline: 8px;
+    background-color: #83A17D;
+    rotate: 45deg;
+}
+
+.hero__play:hover .hero__play--btn {
+    rotate: -135deg;
+}
+
+/* =============================== Hero Media =============================== */
+.hero__media {
+    position: relative;
+    max-width: 56.6%;
+}
+
+.hero__background--blur {
+    position: absolute;
+    top: 122px;
+    left: 156px;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #4DBB9A;
+    filter: blur(137px);
+}
+
+.hero__images {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 446px;
+    border-radius: 110px;
+    object-fit: cover;
+}
+
+.hero__img--down {
+    margin-top: 77px;
+}
+
+.header__hero--decor {
+    position: absolute;
+    top: -32px;
+    left: -210px;
+}
+
+.header__hero--decor:last-child {
+    top: 229px;
+    left: 30px;
+    rotate: 180deg;
+}
 

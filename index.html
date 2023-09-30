@@ -97,42 +97,113 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body>
+    <body style="height: 6000px;">
         <header class="header">
             <div class="container">
                 <div class="header-top">
                     <!-- Logo -->
                     <a href="#">
                         <div class="logo">
-                            <img src="./assets/img/logo.svg" alt="Logo" class="logo__img">
+                            <img
+                                src="./assets/img/logo.svg"
+                                alt="Logo"
+                                class="logo__img"
+                            />
                         </div>
                     </a>
 
-                    
-                        <div class="navbar-action">
-                            <!-- Navbar -->
-                            <nav class="navbar">
-                                <ul class="navbar__list">
-                                    <li class="navbar__item">
-                                        <a href="#!" class="navbar__link navbar__link--active">Home</a>
-                                    </li>
-                                    <li class="navbar__item">
-                                        <a href="#!" class="navbar__link">About</a>
-                                    </li>
-                                    <li class="navbar__item">
-                                        <a href="#!" class="navbar__link">Blog</a>
-                                    </li>
-                                    <li class="navbar__item">
-                                        <a href="#!" class="navbar__link">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-        
-                            <!-- Action -->
-                            <button class="btn action__singup">Sign Up</button>
-                        </div>
+                    <div class="navbar-action">
+                        <!-- Navbar -->
+                        <nav class="navbar">
+                            <ul class="navbar__list">
+                                <li class="navbar__item">
+                                    <a
+                                        href="#!"
+                                        class="navbar__link navbar__link--active"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link">About</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link">Blog</a>
+                                </li>
+                                <li class="navbar__item">
+                                    <a href="#!" class="navbar__link"
+                                        >Contact</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- Action -->
+                        <button class="btn action__singup">Sign Up</button>
+                    </div>
                 </div>
                 <div class="header-dash"></div>
+
+                <div class="hero">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            We’re a creative design agency.
+                        </h1>
+                        <p class="hero__desc">
+                            A brilliant, modular agency template for startup’s
+                            build yours toady.
+                        </p>
+                        <div class="hero__row">
+                            <a href="" class="btn hero__header--btn">Get in touch</a>
+                            <div class="hero__play">
+                                <div class="hero__play--border">
+                                    <div class="hero__play--btn">
+                                        <svg
+                                            class="hero__play--icon"
+                                            width="8"
+                                            height="10"
+                                            viewBox="0 0 8 10"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M7.48979 4.22586C8.15106 4.61996 8.13773 5.58212 7.4658 5.95775L1.49682 9.29454C0.824887 9.67017 -0.00170366 9.17755 0.00896126 8.40782L0.103701 1.57014C0.114366 0.800411 0.954284 0.330874 1.61555 0.724974L7.48979 4.22586Z"
+                                                fill="#FEF6FB"
+                                            />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span class="hero__play--text">Watch Video</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Hero media -->
+                    <section class="hero__media">
+                        <div class="hero__background--blur"></div>
+                        <figure class="hero__images">
+                            <img
+                                src="./assets/img/hero-media-1.jpg"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <img
+                                src="./assets/img/hero-media-2.jpg"
+                                alt=""
+                                class="hero__img hero__img--down"
+                            />
+                            <img
+                                src="./assets/img/hero-media-3.jpg"
+                                alt=""
+                                class="hero__img"
+                            />
+                        </figure>
+
+                        <!-- Hero decor -->
+                        <img src="./assets/icons/hero-decor.svg" alt="Hero Decor" class="header__hero--decor">
+                        <img src="./assets/icons/hero-decor.svg" alt="Hero Decor" class="header__hero--decor">
+                    </section>
+                </div>
             </div>
         </header>
     </body>
