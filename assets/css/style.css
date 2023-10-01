@@ -5,6 +5,7 @@
 :root {
     --primary-color: #152427;
     --secondary-color: #E2EDDF;
+    --desc-color: #7D8188;
 }
 
 html,
@@ -54,6 +55,45 @@ a {
 .btn:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.12;
+    color: var(--primary-color);
+}
+
+.section-heading {
+    font-family: Poppins;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+    color: var(--primary-color);
+}
+
+.section-desc-first,
+.section-desc-second,
+.section-desc-third {
+    font-weight: 500;
+    color: var(--desc-color);
+}
+
+.section-desc-first {
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.section-desc-second {
+    font-size: 1.6rem;
+    line-height: 1.62;
+}
+
+.section-desc-third {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.55;
 }
 
 input, textarea, select, button {
@@ -300,6 +340,80 @@ input, textarea, select, button {
 .client__item:nth-child(4) {
     margin: 0 64px;
 }
+
+/* =============================== Service =============================== */
+.service {
+    margin-top: 106px;
+}
+
+.service__title {
+    position: relative;
+    margin-left: 45px;
+}
+
+.service__title::before {
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+.service__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__heading {
+    position: relative;
+    margin-top: 12px;
+    max-width: 520px;
+}
+
+.service__heading::after {
+    position: absolute;
+    bottom: 19px;
+    right: 104px;
+    display: inline-block;
+    content: "";
+    width: 66px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.service__control {
+    display: flex;
+    column-gap: 17px;
+}
+
+.control__btn {
+    width: 54px;
+    height: 54px;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    transition: .25s;
+}
+
+.control__btn:last-child {
+    rotate: 180deg;
+}
+
+.control__btn:hover {
+    cursor: pointer;
+    background-color: #143C3C;
+}
+
+.control__btn:hover .control__btn--arrow {
+    color: #fff;
+}
+
 
 
 
