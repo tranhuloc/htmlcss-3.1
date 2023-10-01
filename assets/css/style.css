@@ -265,3 +265,42 @@ input, textarea, select, button {
     rotate: 180deg;
 }
 
+/* =============================== Client =============================== */
+.client {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 130px;
+}
+
+.client__row {
+    height: 201px;
+    border-radius: 999px;
+    padding: 76px 120px;
+    background-color: var(--secondary-color);
+}
+
+.client__list,
+.client__item {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.client__logo--name {
+    padding-left: 14px;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.client__item:nth-child(2) {
+    margin-left: 42px;
+    margin-right: 55px;
+}
+
+.client__item:nth-child(4) {
+    margin: 0 64px;
+}
+
+
+
+

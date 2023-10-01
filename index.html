@@ -84,12 +84,9 @@
         <meta name="theme-color" content="#ffffff" />
 
         <!-- Embed fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -97,7 +94,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body style="height: 6000px;">
+    <body style="height: 6000px">
         <header class="header">
             <div class="container">
                 <div class="header-top">
@@ -154,7 +151,9 @@
                             build yours toady.
                         </p>
                         <div class="hero__row">
-                            <a href="" class="btn hero__header--btn">Get in touch</a>
+                            <a href="" class="btn hero__header--btn"
+                                >Get in touch</a
+                            >
                             <div class="hero__play">
                                 <div class="hero__play--border">
                                     <div class="hero__play--btn">
@@ -173,7 +172,9 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <span class="hero__play--text">Watch Video</span>
+                                <span class="hero__play--text"
+                                    >Watch Video</span
+                                >
                             </div>
                         </div>
                     </section>
@@ -200,11 +201,52 @@
                         </figure>
 
                         <!-- Hero decor -->
-                        <img src="./assets/icons/hero-decor.svg" alt="Hero Decor" class="header__hero--decor">
-                        <img src="./assets/icons/hero-decor.svg" alt="Hero Decor" class="header__hero--decor">
+                        <img
+                            src="./assets/icons/hero-decor.svg"
+                            alt="Hero Decor"
+                            class="header__hero--decor"
+                        />
+                        <img
+                            src="./assets/icons/hero-decor.svg"
+                            alt="Hero Decor"
+                            class="header__hero--decor"
+                        />
                     </section>
                 </div>
             </div>
         </header>
+
+        <main>
+            <!-- Client -->
+            <section class="client">
+                <div class="container">
+                    <div class="client__row">
+                        <ul class="client__list">
+                            <!-- Item 1 -->
+                            <li class="client__item">
+                                <img src="./assets/icons/client-1.svg" alt="Google" class="client__logo--icon" />
+                            </li>
+                            <!-- Item 2 -->
+                            <li class="client__item">
+                                <img src="./assets/icons/client-2.svg" alt="slack" class="client__logo--icon" />
+                            </li>
+                            <!-- Item 3 -->
+                            <li class="client__item">
+                                <img src="./assets/icons/client-3.svg" alt="Agworld" class="client__logo--icon" />
+                                <span class="client__logo--name">Agworld</span>
+                            </li>
+                            <!-- Item 4 -->
+                            <li class="client__item">
+                                <img src="./assets/icons/client-4.svg" alt="RioTinto" class="client__logo--icon" />
+                            </li>
+                            <!-- Item 5 -->
+                            <li class="client__item">
+                                <img src="./assets/icons/client-5.svg" alt="HEROKU" class="client__logo--icon" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
