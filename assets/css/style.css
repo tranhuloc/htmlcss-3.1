@@ -344,6 +344,7 @@ input, textarea, select, button {
 /* =============================== Service =============================== */
 .service {
     margin-top: 106px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .service__title {
@@ -362,7 +363,7 @@ input, textarea, select, button {
     background-color: var(--primary-color);
 }
 
-.service__top {
+.service__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -414,6 +415,55 @@ input, textarea, select, button {
     color: #fff;
 }
 
+/* Service List */
+.service__list {
+    display: flex;
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.service-item {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.service-item:hover {
+    cursor: pointer;
+    box-shadow: -6px 9px 64px -4px #76767640;
+}
+
+.service-item__images {
+    overflow: hidden;
+}
+
+.service-item:hover .service-item__thumb {
+    transform: scale(1.2);
+}
+
+.service-item__thumb {
+    display: block;
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    transition: .25s;
+}
+
+.service-item__body {
+    background-color: #fff;
+    padding: 24px 18px;
+}
+
+.service-item__heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.service-item__desc {
+    margin-top: 18px;
+}
 
 
 
