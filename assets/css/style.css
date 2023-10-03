@@ -523,6 +523,7 @@ input, textarea, select, button {
 }
 
 .about-block__heading {
+    margin-top: 9px;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1rem;
@@ -535,6 +536,7 @@ input, textarea, select, button {
     font-weight: 400;
     line-height: 1.4;
     color: #575D5E;
+    opacity: 0.4;
 }
 
 .about-block__percent {
@@ -557,7 +559,7 @@ input, textarea, select, button {
 }
 
 .about-progress-bar__now {
-    width: 40px;
+    width: 40%;
     height: 2px;
     border-radius: 10px;
     background-color: #83A17D;
@@ -592,7 +594,7 @@ input, textarea, select, button {
 .about-team {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    column-gap: 36px;
     margin-top: 4px;
 }
 
@@ -607,12 +609,20 @@ input, textarea, select, button {
     display: flex;
 }
 
-.about-team__avatar {
-    margin-right: -6px;
+.about-team__item {
     width: 16px;
     height: 16px;
-    border: 1px solid #FFFFFF;
+    margin-left: -6px;
     border-radius: 50%;
+    background-color: #fff;
+}
+
+.about-team__avatar {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* About Content */
