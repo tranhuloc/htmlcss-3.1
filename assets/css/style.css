@@ -675,6 +675,123 @@ input, textarea, select, button {
     color: var(--primary-color);
 }
 
+/* =============================== Process =============================== */
+.process {
+    margin-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
 
+.process__inner {
+    position: relative;
+    padding-top: 36px;
+}
 
+.process__title {
+    position: relative;
+    margin-left: 53px;
+}
 
+.process__title::before {
+    position: absolute;
+    top: 9px;
+    left: -46px;
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+.process__heading {
+    position: relative;
+    margin-top: 20px;
+    max-width: 477px;
+}
+
+.process__heading::after {
+    position: absolute;
+    bottom: 22px;
+    right: -9px;
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+.process__img {
+    position: absolute;
+    top: -30px;
+    right: 92px;
+    width: 450px;
+    height: 444px;
+    object-fit: cover;
+}
+
+/* Process list */
+.process-list {
+    margin-top: 81px;
+}
+
+.process-list__item {
+    display: flex;
+    align-items: center;
+    height: 155px;
+    border-bottom: 1px solid #83A17D;
+    padding: 0 30px;
+    transition: .3s;
+}
+
+.process-list__item:hover {
+    border-radius: 33px;
+    border-color: transparent;
+    background-color: #E2EDDF;
+}
+
+.process-list__number {
+    font-size: 7.2rem;
+    font-weight: 600;
+    color: #143C3C;
+}
+
+.process-list__heading {
+    margin-left: 64px;
+}
+
+.process-list__item:first-child .process-list__heading {
+    margin-left: 81px;
+}
+
+.process-list__name {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.process-list__link {
+    display: none;
+    margin-top: 22px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #575D5E;
+    transition: .3s;
+}
+
+.process-list__item:hover .process-list__link {
+    display: block;
+}
+
+.process-list__link:active {
+    opacity: 0.8;
+}
+
+.process-list__content {
+    max-width: 572px;
+    margin-left: 175px;
+}
+
+.process-list__item:last-child .process-list__content {
+    margin-left: 242px;
+}
