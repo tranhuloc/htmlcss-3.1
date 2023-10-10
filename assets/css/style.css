@@ -902,3 +902,61 @@ input, textarea, select, button {
     top: -160px;
     right: -65px;
 }
+
+/* =============================== Share =============================== */
+.share {
+    margin-top: 140px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.share__heading {
+    width: 520px;
+    margin: auto;
+}
+
+.share__desc {
+    width: 547px;
+    margin: 20px auto 0;
+}
+
+.share-list {
+    display: flex;
+    column-gap: 45px;
+    flex-wrap: wrap;
+    margin-top: 103px;
+}
+
+.share-list__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 362px;
+    border: 1.5px solid #CECECE;
+    border-radius: 160px;
+    transition: .3s;
+}
+
+.share-list__item:hover {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 36px 100px 0px #6F786F33;
+    translate: 0 -59px;
+}
+
+.share-list__title {
+    margin-top: 24px;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.share-list__desc {
+    width: 75%;
+    margin-top: 12px;
+}
