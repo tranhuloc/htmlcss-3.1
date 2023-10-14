@@ -83,6 +83,9 @@
         />
         <meta name="theme-color" content="#ffffff" />
 
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
         <!-- Embed fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -90,14 +93,12 @@
             href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
-
-        <!-- Reset CSS -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body style="height: 8000px">
+    <body>
         <header class="header">
             <div class="container">
                 <div class="header-top">
@@ -840,5 +841,163 @@
                 </div>
             </section>
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- Footer Contact -->
+                    <div class="footer-contact">
+                        <h2 class="footer-contact__heading">
+                            Sign up for our newsletter
+                        </h2>
+                        <!-- Footer form -->
+                        <form class="footer-contact__form" action="">
+                            <input
+                                class="footer-contact__input"
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter your email..."
+                            />
+                            <button class="footer-contact__btn">
+                                <svg
+                                    class="footer-contact__arrow"
+                                    width="22"
+                                    height="13"
+                                    viewBox="0 0 22 13"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M21 6.82353H0.999999M0.999999 6.82353L6.29412 1M0.999999 6.82353L6.29412 12"
+                                        stroke="currentColor"
+                                        stroke-width="1.5"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="footer-contact__line"></div>
+
+                        <!-- Footer Social -->
+                        <div class="footer-social">
+                            <a href="#!" class="footer-social__link">
+                                <img
+                                    src="./assets/icons/facebook.svg"
+                                    alt="Facebook"
+                                    class="footer-social__icon"
+                                />
+                            </a>
+                            <a href="#!" class="footer-social__link">
+                                <svg
+                                    width="18"
+                                    height="18"
+                                    viewBox="0 0 15 15"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.75 3.375C12.75 3.99632 12.2463 4.5 11.625 4.5C11.0037 4.5 10.5 3.99632 10.5 3.375C10.5 2.75368 11.0037 2.25 11.625 2.25C12.2463 2.25 12.75 2.75368 12.75 3.375Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M7.5 11.25C9.57107 11.25 11.25 9.57107 11.25 7.5C11.25 5.42893 9.57107 3.75 7.5 3.75C5.42893 3.75 3.75 5.42893 3.75 7.5C3.75 9.57107 5.42893 11.25 7.5 11.25ZM7.5 9.75C8.74264 9.75 9.75 8.74264 9.75 7.5C9.75 6.25736 8.74264 5.25 7.5 5.25C6.25736 5.25 5.25 6.25736 5.25 7.5C5.25 8.74264 6.25736 9.75 7.5 9.75Z"
+                                        fill="white"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M0 7.2C0 4.67976 0 3.41965 0.490471 2.45704C0.921901 1.61031 1.61031 0.921901 2.45704 0.490471C3.41965 0 4.67976 0 7.2 0H7.8C10.3202 0 11.5804 0 12.543 0.490471C13.3897 0.921901 14.0781 1.61031 14.5095 2.45704C15 3.41965 15 4.67976 15 7.2V7.8C15 10.3202 15 11.5804 14.5095 12.543C14.0781 13.3897 13.3897 14.0781 12.543 14.5095C11.5804 15 10.3202 15 7.8 15H7.2C4.67976 15 3.41965 15 2.45704 14.5095C1.61031 14.0781 0.921901 13.3897 0.490471 12.543C0 11.5804 0 10.3202 0 7.8V7.2ZM7.2 1.5H7.8C9.08487 1.5 9.95831 1.50117 10.6334 1.55633C11.2911 1.61006 11.6274 1.70745 11.862 1.82698C12.4265 2.1146 12.8854 2.57354 13.173 3.13803C13.2926 3.37263 13.3899 3.70893 13.4437 4.36656C13.4988 5.04169 13.5 5.91513 13.5 7.2V7.8C13.5 9.08487 13.4988 9.95831 13.4437 10.6334C13.3899 11.2911 13.2926 11.6274 13.173 11.862C12.8854 12.4265 12.4265 12.8854 11.862 13.173C11.6274 13.2926 11.2911 13.3899 10.6334 13.4437C9.95831 13.4988 9.08487 13.5 7.8 13.5H7.2C5.91513 13.5 5.04169 13.4988 4.36656 13.4437C3.70893 13.3899 3.37263 13.2926 3.13803 13.173C2.57354 12.8854 2.1146 12.4265 1.82698 11.862C1.70745 11.6274 1.61006 11.2911 1.55633 10.6334C1.50117 9.95831 1.5 9.08487 1.5 7.8V7.2C1.5 5.91513 1.50117 5.04169 1.55633 4.36656C1.61006 3.70893 1.70745 3.37263 1.82698 3.13803C2.1146 2.57354 2.57354 2.1146 3.13803 1.82698C3.37263 1.70745 3.70893 1.61006 4.36656 1.55633C5.04169 1.50117 5.91513 1.5 7.2 1.5Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#!" class="footer-social__link">
+                                <img
+                                    src="./assets/icons/twitter.svg"
+                                    alt="Twitter"
+                                    class="footer-social__icon"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Footer column -->
+                    <!-- Column 1 -->
+                    <div class="footer-list">
+                        <ul class="footer-list__column">
+                            <li class="footer-list__title">Pages</li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Home</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">About</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Blog</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Blog Post</a>
+                            </li>
+                        </ul>
+
+                        <!-- Column 2 -->
+                        <ul class="footer-list__column">
+                            <li class="footer-list__title">Product</li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Home</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">About</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Blog</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Blog Post</a>
+                            </li>
+                        </ul>
+
+                        <!-- Column 3 -->
+                        <ul class="footer-list__column">
+                            <li class="footer-list__title">Overview</li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Home1</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Home2</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Home3</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Pricing1</a>
+                            </li>
+                        </ul>
+
+                        <!-- Column 4 -->
+                        <ul class="footer-list__column">
+                            <li class="footer-list__title">About us</li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Team</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Investors</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Blog</a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#!" class="footer-list__link">Press</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__dash"></div>
+            </div>
+        </footer>
     </body>
 </html>
