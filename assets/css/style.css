@@ -33,6 +33,10 @@ header {
     margin: 0 auto;
 }
 
+main {
+    margin-top: -91px;
+}
+
 a {
     text-decoration: none;
 }
@@ -297,7 +301,7 @@ input, textarea, select, button {
 }
 
 .hero__img--down {
-    margin-top: 77px;
+    translate: 0 77px;
 }
 
 .header__hero--decor {
