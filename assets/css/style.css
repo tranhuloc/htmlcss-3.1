@@ -111,7 +111,6 @@ input, textarea, select, button {
 /* =============================== Header =============================== */
 .header {
     min-height: 100vh;
-    padding-top: 28px;
 }
 
 /* Header top */
@@ -119,6 +118,15 @@ input, textarea, select, button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.fixed-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: 'Public Sans', sans-serif;
+    padding: 28px 0 12px;
+    background-color: #fff;
 }
 
 .navbar-action {
@@ -146,8 +154,8 @@ input, textarea, select, button {
 
 .navbar__link--active::before {
     position: relative;
-    top: 37px;
-    left: 17px;
+    top: 35px;
+    left: 22px;
     content: "";
     display: inline-block;
     width: 16px;
@@ -156,7 +164,6 @@ input, textarea, select, button {
 }
 
 .header-dash {
-    margin-top: 13px;
     height: 1px;
     background: linear-gradient(90deg, #FFFFFF 0%, #DDDCDC 51.09%, rgba(213, 213, 213, 0) 99.68%);
 }

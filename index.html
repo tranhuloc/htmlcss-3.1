@@ -99,49 +99,62 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-        <header class="header">
+
+  
+        <div class="fixed-header">
             <div class="container">
-                <div class="header-top">
-                    <!-- Logo -->
-                    <a href="#">
-                        <div class="logo">
-                            <img
-                                src="./assets/img/logo.svg"
-                                alt="Logo"
-                                class="logo__img"
-                            />
+                    <div class="header-top">
+                        <!-- Logo -->
+                        <a href="#">
+                            <div class="logo">
+                                <img
+                                    src="./assets/img/logo.svg"
+                                    alt="Logo"
+                                    class="logo__img"
+                                />
+                            </div>
+                        </a>
+            
+                        <div class="navbar-action">
+                            <!-- Navbar -->
+                            <nav class="navbar">
+                                <ul class="navbar__list">
+                                    <li class="navbar__item">
+                                        <a
+                                            href="#"
+                                            class="navbar__link navbar__link--active">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a href="#about" class="navbar__link">
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a href="#blog" class="navbar__link">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li class="navbar__item">
+                                        <a href="#footer" class="navbar__link">
+                                            Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+            
+                            <!-- Action -->
+                            <button class="btn action__singup">Sign Up</button>
                         </div>
-                    </a>
-
-                    <div class="navbar-action">
-                        <!-- Navbar -->
-                        <nav class="navbar">
-                            <ul class="navbar__list">
-                                <li class="navbar__item">
-                                    <a
-                                        href="#!"
-                                        class="navbar__link navbar__link--active"
-                                        >Home</a
-                                    >
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="#!" class="navbar__link">About</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="#!" class="navbar__link">Blog</a>
-                                </li>
-                                <li class="navbar__item">
-                                    <a href="#!" class="navbar__link"
-                                        >Contact</a
-                                    >
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <!-- Action -->
-                        <button class="btn action__singup">Sign Up</button>
                     </div>
                 </div>
+        </div>
+       
+
+        <header class="header">
+            <div class="container">
+                
                 <div class="header-dash"></div>
 
                 <div class="hero">
@@ -400,7 +413,7 @@
             </section>
 
             <!-- About -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <div class="about__inner">
                         <!-- About Media -->
@@ -747,7 +760,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <div class="blog__top">
                         <div class="blog__row">
@@ -842,7 +855,7 @@
             </section>
         </main>
 
-        <footer class="footer">
+        <footer id="footer" class="footer">
             <div class="container">
                 <div class="footer__inner">
                     <!-- Footer Contact -->
