@@ -213,14 +213,14 @@ input, textarea, select, button {
     padding: 15px 35px;
 }
 
-.hero__play {
+.hero-play {
     display: flex;
     align-items: center;
     column-gap: 10px;
     height: 60px;
     padding: 0;
     border: none;
-    color: #152427;
+    color: var(--primary-color);
     background-color: transparent;
     font-family: "Poppins";
     font-weight: 600;
@@ -229,17 +229,17 @@ input, textarea, select, button {
     transition: .3s;
 }
 
-.hero__play:hover {
+.hero-play:hover {
     color: #83A17D;
 }
 
-.hero__play--border {
+.hero-play__border {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 57px;
     height: 57px;
-    border: 4px solid var(--primary-color);
+    border: 4px solid var(--bg-color);
     border-radius: 50%;
     border-bottom-color: transparent;
     border-right-color: transparent;
@@ -247,14 +247,14 @@ input, textarea, select, button {
     transition: .3s;
 }
 
-.hero__play:hover .hero__play--border  {
-    border: 4px solid var(--primary-color);
+.hero-play:hover .hero-play__border  {
+    border: 4px solid var(--bg-color);
     border-bottom-color: transparent;
     border-right-color: transparent;
     rotate: 135deg;
 }
 
-.hero__play--btn {
+.hero-play__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -266,7 +266,7 @@ input, textarea, select, button {
     rotate: 45deg;
 }
 
-.hero__play:hover .hero__play--btn {
+.hero-play:hover .hero-play__btn {
     rotate: -135deg;
 }
 
