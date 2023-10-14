@@ -49,7 +49,7 @@ a {
     line-height: 1.55;
     text-align: center;
     color: #fff;
-    background-color: var(--primary-color);
+    background-color: var(--bg-color);
 }
 
 .btn:hover {
@@ -311,11 +311,11 @@ input, textarea, select, button {
     left: 30px;
     rotate: 180deg;
 }
-
+ 
 /* =============================== Client =============================== */
 .client {
     font-family: 'Poppins', sans-serif;
-    margin-top: 130px;
+    /* margin-top: 130px; */
 }
 
 .client__row {
@@ -332,6 +332,10 @@ input, textarea, select, button {
     color: var(--primary-color);
 }
 
+.client__item:hover {
+    cursor: pointer;
+}
+
 .client__logo--name {
     padding-left: 14px;
     font-size: 2.6rem;
@@ -340,12 +344,12 @@ input, textarea, select, button {
 }
 
 .client__item:nth-child(2) {
-    margin-left: 42px;
-    margin-right: 55px;
+    padding-left: 42px;
+    padding-right: 55px;
 }
 
 .client__item:nth-child(4) {
-    margin: 0 64px;
+    padding: 0 64px;
 }
 
 /* =============================== Service =============================== */
